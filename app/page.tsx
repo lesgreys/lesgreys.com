@@ -25,7 +25,7 @@ interface AboutMeProps {
 }
 
 const AboutMe: React.FC<AboutMeProps> = ({ onNext }) => (
-  <div className="fixed inset-0 bg-white flex flex-col items-center justify-center p-4 md:p-8 z-50 overflow-y-auto">
+  <div className="fixed inset-0 bg-white text-black flex flex-col items-center justify-center p-4 md:p-8 z-50 overflow-y-auto">
     <div className="flex-1 flex items-center">
       <div className="max-w-2xl text-center">
         <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">About Me</h2>
