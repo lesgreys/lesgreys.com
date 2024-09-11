@@ -325,10 +325,10 @@ const InteractiveTimeline = () => {
           </div>
         )}
       </div>
-      <div className="absolute inset-x-0 bottom-8 flex justify-center">
+      <div className="absolute inset-x-0 bottom-0 md:bottom-8 flex justify-center items-end h-1/4 md:h-auto bg-gradient-to-t from-black/50 to-transparent md:bg-none">
         <button 
           onClick={() => setShowAboutMe(true)} 
-          className="text-white hover:text-gray-300 transition-colors flex flex-col items-center"
+          className="text-white hover:text-gray-300 transition-colors flex flex-col items-center mb-4 md:mb-0"
         >
           <ChevronDown size={24} />
           <span className="mt-1">About</span>
