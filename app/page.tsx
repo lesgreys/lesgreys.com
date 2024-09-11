@@ -325,7 +325,7 @@ const InteractiveTimeline = () => {
           </div>
         )}
       </div>
-      <div className="absolute inset-x-0 bottom-1/4 md:bottom-8 flex justify-center items-center">
+      <div className="absolute inset-x-0 bottom-1/4 md:bottom-8 flex justify-center items-center bg-opacity-30 py-2">
         <button 
           onClick={() => setShowAboutMe(true)} 
           className="text-white hover:text-gray-300 transition-colors flex flex-col items-center mb-4 md:mb-0"
