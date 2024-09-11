@@ -28,8 +28,8 @@ const AboutMe: React.FC<AboutMeProps> = ({ onNext }) => (
   <div className="fixed inset-0 bg-white text-black flex flex-col items-center justify-center p-4 md:p-8 z-50 overflow-y-auto">
     <div className="flex-1 flex items-center">
       <div className="max-w-2xl text-center">
-        <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">About Me</h2>
-        <p className="text-base md:text-lg mb-4 md:mb-6">
+        <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-black">About Me</h2>
+        <p className="text-base md:text-lg mb-4 md:mb-6 text-black">
           Hello! I'm Les, a life long problem-solver, learner, and renewed technocapitalist
           <NumberedReference 
             number={1} 
@@ -37,7 +37,7 @@ const AboutMe: React.FC<AboutMeProps> = ({ onNext }) => (
           />. 
           Currently based in Miami, FL, I help independent business owners and startups research & adopt technology -- consulting and building products leveraging AI, blockchains, data, and more. 
         </p>
-        <p className="text-base md:text-lg mb-4 md:mb-6">
+        <p className="text-base md:text-lg mb-4 md:mb-6 text-black">
           The purpose of this site is to create a digital home of information for a future generation.
         </p>
       </div>
@@ -313,7 +313,7 @@ const InteractiveTimeline = () => {
   }, [isMobile, events]);
 
   return (
-    <div className="relative w-full h-screen bg-gray-900">
+    <div className="relative w-full h-screen bg-gray-900 overflow-hidden">
       <canvas ref={canvasRef} className="absolute inset-0" />
       <div className="absolute inset-x-0 top-0 p-4 flex flex-col items-center text-center">
         <h1 className="text-3xl md:text-4xl font-bold mb-2 text-white">Les Greys</h1>
