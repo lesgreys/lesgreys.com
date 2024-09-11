@@ -313,7 +313,7 @@ const InteractiveTimeline = () => {
   }, [isMobile, events]);
 
   return (
-    <div className="relative w-full h-screen bg-gray-900 overflow-hidden">
+    <div className="relative w-full h-screen bg-opactiy-30 overflow-hidden">
       <canvas ref={canvasRef} className="absolute inset-0" />
       <div className="absolute inset-x-0 top-0 p-4 flex flex-col items-center text-center">
         <h1 className="text-3xl md:text-4xl font-bold mb-2 text-white">Les Greys</h1>
@@ -325,7 +325,7 @@ const InteractiveTimeline = () => {
           </div>
         )}
       </div>
-      <div className="absolute inset-x-0 bottom-1/4 md:bottom-8 flex justify-center items-center bg-opacity-30 py-2">
+      <div className="absolute inset-x-0 bottom-10 md:bottom-8 flex justify-center items-center bg-opacity-30 py-2">
         <button 
           onClick={() => setShowAboutMe(true)} 
           className="text-white hover:text-gray-300 transition-colors flex flex-col items-center mb-4 md:mb-0"
