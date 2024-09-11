@@ -8,7 +8,7 @@ import Link from 'next/link';
 import dynamic from 'next/dynamic';
 
 interface Event {
-  year: number;v
+  year: number;
   description: string;
   position: number;
 }
