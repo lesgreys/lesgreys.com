@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 import Figure8Particles from "./Figure8Particles";
+import SocialIcons from "./SocialIcons";
 
 const WorkTile = ({ title, href }: { title: string; href: string }) => (
   <Link href={href} className="w-full block mb-2">
@@ -48,6 +49,9 @@ const Work = () => {
         <WorkTile title="Activities" href="/work" />
       </div>
       <p className="mt-8 mb-4 text-sm text-gray-500 relative z-20">Press 'Esc' to return to timeline</p>
+      <div className="absolute bottom-4 left-4 z-20">
+        <SocialIcons />
+      </div>
     </div>
   );
 };

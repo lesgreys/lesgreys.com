@@ -1,4 +1,5 @@
 import React from 'react';
+import SocialIcons from '../../components/SocialIcons';
 
 interface AboutMeProps {
   onClose: () => void;
@@ -24,6 +25,9 @@ const AboutMe: React.FC<AboutMeProps> = ({ onClose }) => (
     >
       Close
     </button>
+    <div className="absolute bottom-4 left-4">
+      <SocialIcons />
+    </div>
   </div>
 );
 

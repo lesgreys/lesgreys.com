@@ -6,6 +6,8 @@ import { useMediaQuery } from 'react-responsive';
 import NumberedReference from '../components/NumberedReference';  
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
+import Image from 'next/image';
+import SocialIcons from '../components/SocialIcons';
 
 interface Event {
   year: number;
@@ -51,6 +53,9 @@ const AboutMe: React.FC<AboutMeProps> = ({ onNext }) => (
         <span className="mt-1">Work</span>
       </button>
       <p className="text-sm text-gray-500 mt-2">Press 'Esc' to return to timeline</p>
+    </div>
+    <div className="absolute bottom-4 left-4">
+      <SocialIcons />
     </div>
   </div>
 );
@@ -343,6 +348,9 @@ const InteractiveTimeline = () => {
       <VerticalTransition isVisible={showWork}>
         <Work />
       </VerticalTransition>
+      <div className="absolute bottom-4 left-4">
+        <SocialIcons />
+      </div>
     </div>
   );
 };

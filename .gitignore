@@ -1,5 +1,6 @@
 .env
 node_modules
+.next
 
 # OS files
 .DS_Store
