@@ -322,7 +322,7 @@ const InteractiveTimeline = () => {
       <canvas ref={canvasRef} className="absolute inset-0" />
       <div className="absolute inset-x-0 top-0 p-4 flex flex-col items-center text-center">
         <h1 className="text-3xl md:text-4xl font-bold mb-2 text-white">Les Greys</h1>
-        <p className="text-lg md:text-xl mb-4 text-white px-4">Entrepreneur, Writer, Prompt Engineer</p>
+        <p className="text-lg md:text-xl mb-4 text-white px-4">Writer, Builder, Founder</p>
         {currentEvent && (
           <div className="mt-4 text-white text-center">
             <h3 className="text-xl font-bold">{currentEvent.year}</h3>
