@@ -101,7 +101,7 @@ export default function Home() {
             </div>
             {/* Tooltip */}
             <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-3 bg-gray-800 text-white text-sm rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 shadow-lg">
-              <p>Have a conversation with an AI trained on Les Greys&apos; personal writings and work - AMA.</p>
+              <p>COMING SOON: Have a conversation with an AI trained on Les Greys&apos; personal writings and work - AMA.</p>
               <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 transform rotate-45 w-2 h-2 bg-gray-800"></div>
             </div>
           </div>
@@ -120,7 +120,9 @@ export default function Home() {
               />
               <button
                 type="submit"
-                className="absolute right-2 top-1/2 -translate-y-1/2 p-2 bg-blue-500 rounded-full hover:bg-blue-600 transition-colors text-white"
+                disabled
+                className="absolute right-2 top-1/2 -translate-y-1/2 p-2 bg-gray-300 rounded-full cursor-not-allowed text-white"
+                title="Coming soon"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
